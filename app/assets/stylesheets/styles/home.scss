@@ -1,0 +1,48 @@
+.home-welcome {
+    box-sizing: border-box;
+    position: absolute;
+
+    height: 620px;
+    // min-height: 100%;
+    width: 100%;
+    // z-index: 0;
+    // top: 0px;
+    // left: 0px;
+    background-image: image-url('dream-house-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: scroll;
+    // background-clip: inherit;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+   
+}
+
+.home-welcome  > h1 {
+    color: #FFF;
+    font-family: "Times New Roman", serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin-top: 100px;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+}
+
+.home-welcome > h3 {
+    color: #FFF;
+    font-family: "Open Sans",Tahoma,Geneva,sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin: 32px;
+    margin-top: 24px;
+    -webkit-font-smoothing: antialiased;
+}

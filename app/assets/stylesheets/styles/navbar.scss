@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 80px;
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    border: none;
+    padding-right: 24px;
+    z-index: 1;
+    overflow: visible;
+    // box-sizing: border-box;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    justify-content: flex-start;
+    top: 50px;
+    white-space: nowrap;
+}
+
+.header-list a, .header-list li {
+    text-decoration: none;
+    color: black;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.header-logo > a {
+    text-decoration: none;
+    color: #006AFF;
+    font-family: Tahoma, sans-serif;
+    font-size: 36px;
+}

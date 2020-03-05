@@ -17,8 +17,14 @@ module.exports = {
                         presets: ["@babel/env", "@babel/react"]
                     }
                 }
-            }
-        ]
+            }, {
+                test: /\.css$/,
+                use: ['style-loader', 'raw-loader'],
+            }, {
+                test: /\.(jpe?g|png|gif|svg)$/,
+                use: ['url-loader']
+            }],
+
     },
     resolve: {
         extensions: [".js", ".jsx", "*"]
