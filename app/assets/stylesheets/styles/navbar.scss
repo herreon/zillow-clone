@@ -2,32 +2,47 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    height: 80px;
     position: relative;
+    height: auto;
     width: 100%;
-    max-width: 1280px;
-    margin: auto;
+    background-color: #ffffff;
+    // margin: auto;
     border: none;
-    padding-right: 24px;
     z-index: 1;
     overflow: visible;
-    // box-sizing: border-box;
+    box-sizing: border-box;
     align-items: center;
+
 }
 
 .header-list {
     display: flex;
-    justify-content: flex-start;
-    top: 50px;
     white-space: nowrap;
+    align-items: center;
 }
 
-.header-list a, .header-list li {
+.hl1 {
+    margin-left: 8px;
+}
+
+.hl2 {
+    margin-right: 20px;
+}
+
+.header-list li, a, button {
+    font-size: 14px;
+    font-family: Tahoma, sans-serif;
     text-decoration: none;
     color: black;
-    font-family: Tahoma, sans-serif;
-    font-size: 14px;
-    padding: 8px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 14px;
+    padding-left: 14px;
+    box-sizing: border-box;
+}
+
+.header-list a:hover {
+    color: #006AFF;
 }
 
 .header-logo > a {
@@ -35,4 +50,74 @@
     color: #006AFF;
     font-family: Tahoma, sans-serif;
     font-size: 36px;
+}
+
+.signin-join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-join button {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+}
+
+#signin {
+    padding-right: 0;
+}
+
+#join {
+    padding-left: 0;
+}
+
+// NAVBAR - MY YILLOW PROFILE
+
+.profile {
+    position: relative;
+}
+
+
+.profile-dropdown {
+    // display: none;
+    position: absolute;
+    height: auto;
+    width: 300px;
+    background-color: white;
+    right: 20px;
+    padding-top: inherit;
+    box-sizing: border-box;
+}
+
+.profile:hover .profile-dropdown {
+    display: block;
+}
+
+.profile-dropdown li, .profile-dropdown a  {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #a7a6ab;
+}
+
+.profile-dropdown li {
+    padding: 20px;
+}
+
+#navlink {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#navlink:hover {
+    color: #006AFF;
+    cursor: pointer;
+}
+
+.profile-signout {
+    border: none;
+    background-color: white;
+    padding: 10px;
 }

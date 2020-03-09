@@ -3,35 +3,35 @@ import GreetingContainer from './greeting_container';
 
 const Navbar = () => (
     <nav className="header">
-        <ul className="header-list">
+        <ul className="header-list hl1">
             <li><a href="#">Buy</a>
-                <ul>
-                </ul>
+                {/* <ul>
+                </ul> */}
             </li>
             <li><a href="#">Rent</a>
-                <ul>
-                </ul>
+                {/* <ul>
+                </ul> */}
             </li>
             <li><a href="#">Sell</a>
-                <ul>
-                </ul>
+                {/* <ul>
+                </ul> */}
             </li>
             <li><a href="#">Home Loans</a>
-                <ul>
-                </ul>
+                {/* <ul>
+                </ul> */}
             </li>
             <li><a href="#">Agent finder</a>
-                <ul>
-                </ul>
+                {/* <ul>
+                </ul> */}
             </li>
 
         </ul>
 
-        <h1 class="header-logo">
+        <h1 className="header-logo">
             <a href="#">Yillow</a>
         </h1>
 
-        <ul className="header-list">
+        <ul className="header-list hl2">
             <li><a href="#">Manage rentals</a></li>
             <li><a href="#">Advertise</a></li>
             <GreetingContainer />

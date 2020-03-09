@@ -1,26 +1,26 @@
 import React from "react";
 import { Route, Redirect, withRouter } from 'react-router-dom';
-
+import Modal from "./modal/modal";  
 import Navbar from "./navbar/navbar";
 import Home from "./home/home";
 import { Switch } from "react-router-dom";
-// import SignupFormContainer from "./signup_form_container";
+
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 
 const App = () => (
-    <div>
-        <header>
-            {/* <Navbar /> */}
-        {/* <SignupFormContainer /> */}
-        </header>
-    
-    
+    <div className="rootyroot">
+
+        <Modal />
+        <Navbar />
+
+
         <Switch>
-            <Route path="/" component={Home} />
+            <Route exact path="/" component={Home} />            
         </Switch>
-        
-        {/* <Route path="/signin" component={LoginFormContainer} /> */}
-        {/* <Route path="/join" component={SignupFormContainer} /> */}
+
+    
+    
     </div>
 
     

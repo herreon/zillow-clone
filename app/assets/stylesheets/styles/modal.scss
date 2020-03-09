@@ -1,0 +1,162 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+}
+
+.modal-child {
+  position: relative;
+  height: auto;
+  max-width: 448px;
+  margin-left: 420px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  background: #fff;
+  border: 1px solid #A7A6AB;
+  box-shadow: 0 0 5px rgba(0,0,0,.35);
+  box-sizing: border-box;
+}
+
+
+// OVERALL
+
+.modal-form-container {
+  font-family: Tahoma, sans-serif;
+  color: green;
+  padding: 20px;
+  line-height: 1.5;
+  list-style: none;
+  display: block;
+  text-decoration: none;
+}
+
+// HEADINGS
+
+
+.modal-form-container-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 30px;
+}
+
+.modal-form-container-header h1 {
+  color: black;
+  font-family: 'Crimson Text: 700', serif;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+// THE X
+
+.modal-form-container-header span {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  color: #2a2a33;
+  font-weight: lighter;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.modal-form-container-header span:hover {
+  color: #006AFF
+}
+
+// TAB BUTTONS
+
+.modal-form-buttons {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.modal-form-buttons button {
+  border: none;
+  font-size: 18px;
+  font-weight: 300px;
+  color: black;
+  display: inline-block;
+  position: relative;
+  padding: 0 0 10px;
+}
+
+.modal-form-buttons #second {
+  margin-left: 30px;
+}
+
+.modal-form-buttons .highlight {
+    color:#006AFF;
+    border-bottom: 1px solid #006AFF;
+}
+
+
+// INPUT FIELDS
+
+.modal-form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  padding: 0;
+}
+
+
+.modal-form-box .modal-form .session-input {
+  width: 100%;
+  height: 38px;
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  padding: 4px 6px 2px;
+  border: 1px solid #a7a6ab;
+  margin-bottom: 15px;
+}
+
+.pw-requirements {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 33px;
+}
+
+.pw-requirements p {
+  color: #a7a6ab;
+  font-family: Tahoma, sans-serif;
+  font-size: 12px;
+  padding: 2px 0;
+}
+
+
+// ERRORS
+.error-msgs {
+  list-style: none;
+  color: #ff5a50;
+  font-size: 12px;
+}
+
+// SUBMIT BUTTON
+.session-submit {
+  background-color: #006AFF;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 38px;
+  padding: .4em .67em;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.session-submit:hover {
+  background: linear-gradient(black, 6%, #006AFF);
+}

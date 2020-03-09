@@ -1,26 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Greeting = ({ currentUser, logout }) => {
+
+const Greeting = ({ currentUser, logout, openModal }) => {
     
     const myYillow = () => (
-        <li>
-            <a href="#">My Yillow</a>
-            <ul className="header-myyillow">
-                <li>Saved searches
-                    <Link to="#">View all</Link>
-                </li>
+        <li className="profile">
+            <a h1ref="#">My Yillow</a>
 
-                <li>My homes
-                    <Link to="#">Saved homes</Link>
-                </li>
-
-                <li>My account
-                    <Link to="#">Profile</Link>
+            <ul className="profile-dropdown">
+                <li>
+                    <label>Saved searches</label>
+                    <Link id="navlink" to="#">View all</Link>
                 </li>
 
                 <li>
-                    <button className="header-button" onClick={logout}>Sign out</button>
+                    <label>My homes</label>
+                    <Link id="navlink" to="#">Saved homes</Link>
+                </li>
+
+                <li>
+                    <label>My account</label>
+                    <Link id="navlink" to="#">Profile</Link>
+                </li>
+
+                <li>
+                    <button id="navlink" className="profile-signout" onClick={logout}>Sign out</button>
                 </li>
             </ul>
         </li>
@@ -28,9 +33,10 @@ const Greeting = ({ currentUser, logout }) => {
 
     const sessionLinks = () => (
         <li className="signin-join">
-            <Link to="/signin">Sign in</Link>or
-            {/* &nbsp;or&nbsp; */}
-            <Link to="/join">Join</Link>
+            <button id="signin" onClick={() => openModal('signin')}>Sign in</button>
+            &nbsp;or&nbsp;
+            <button id="join" onClick={() => openModal('join')}>Join</button>
+        
         </li>
     )
                 
