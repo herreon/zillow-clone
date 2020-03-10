@@ -35,6 +35,7 @@
   list-style: none;
   display: block;
   text-decoration: none;
+  text-align: center;
 }
 
 // HEADINGS
@@ -42,7 +43,7 @@
 
 .modal-form-container-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
   font-size: 30px;
 }
@@ -75,10 +76,12 @@
 .modal-form-buttons {
   margin-bottom: 5px;
   border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-start;
 }
 
 
-.modal-form-buttons button {
+.modal-form-buttons button, .modal-form-buttons a {
   border: none;
   font-size: 18px;
   font-weight: 300px;
@@ -86,6 +89,12 @@
   display: inline-block;
   position: relative;
   padding: 0 0 10px;
+  outline: none;
+}
+
+.modal-form-buttons button:hover, a:hover {
+  color: #006AFF;
+  cursor: pointer;
 }
 
 .modal-form-buttons #second {
@@ -103,13 +112,17 @@
 .modal-form-box {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
   position: relative;
   padding: 0;
 }
 
 
-.modal-form-box .modal-form .session-input {
+.modal-form {
+  width: 100%;
+}
+
+.session-input {
   width: 100%;
   height: 38px;
   box-sizing: border-box;
@@ -121,11 +134,16 @@
   margin-bottom: 15px;
 }
 
+.pw {
+  margin-bottom: 10px;
+}
+
 .pw-requirements {
   box-sizing: border-box;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding-left: 33px;
 }
 
@@ -142,21 +160,63 @@
   list-style: none;
   color: #ff5a50;
   font-size: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.error-msgs > li:last-child {
+  margin-bottom: 10px;
 }
 
 // SUBMIT BUTTON
-.session-submit {
+.session-submit, .demo-user {
   background-color: #006AFF;
   color: white;
   box-sizing: border-box;
   border-radius: 5px;
   font-size: 16px;
   height: 38px;
+  width: 100%;
   padding: .4em .67em;
   cursor: pointer;
   margin-bottom: 20px;
+  outline: none;
+}
+
+.demo-user {
+  background-color: #006AFF;
+  color: white;
+  margin-top: 20px;
 }
 
 .session-submit:hover {
   background: linear-gradient(black, 6%, #006AFF);
+}
+
+.demo-user:hover {
+  background: linear-gradient(black, 6%, #006AFF);
+}
+
+.modal-form-container > p {
+  color: black;
+  font-style: italic;
+}
+
+.routeBg {
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 85px;
+}
+
+.routeCh {
+  margin-top: 0px;
+  border: none;
+  box-shadow: 0 0 0;
+}
+
+.routeCh > .modal-form-container > .modal-form-container-header > span {
+  display: none;
 }

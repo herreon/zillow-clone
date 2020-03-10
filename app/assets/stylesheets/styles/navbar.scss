@@ -12,7 +12,7 @@
     overflow: visible;
     box-sizing: border-box;
     align-items: center;
-
+    border-bottom: 1px solid #D8D8D8;
 }
 
 .header-list {
@@ -59,9 +59,14 @@
 }
 
 .signin-join button {
-    cursor: pointer;
     padding: 0;
     border: none;
+    outline: none;
+}
+
+.signin-join button:hover {
+    color: #006AFF;
+    cursor: pointer;
 }
 
 #signin {
@@ -80,7 +85,7 @@
 
 
 .profile-dropdown {
-    // display: none;
+    display: none;
     position: absolute;
     height: auto;
     width: 300px;
@@ -99,6 +104,14 @@
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #a7a6ab;
+}
+
+.profile-dropdown a {
+    border: none;
+}   
+
+.profile-dropwdown li {
+    font-weight: bold;
 }
 
 .profile-dropdown li {
@@ -120,4 +133,5 @@
     border: none;
     background-color: white;
     padding: 10px;
+    outline: none;
 }

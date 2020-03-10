@@ -1,11 +1,31 @@
 class User < ApplicationRecord
+    after_initialize :ensure_session_token
+
     attr_reader :password
     
     validates :email, :password_digest, :session_token, presence: true
     validates :email, uniqueness: true
+    validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
+
     validates :password, length: { minimum: 8 }, allow_nil: true
-    
-    after_initialize :ensure_session_token
+    validate :password_requirements_are_met
+
+    def password_requirements_are_met
+
+        return true if @password.nil?
+
+        rules = {
+            " must contain at least one letter"  => /[a-z]|[A-Z]+/,
+            " must contain at least one digit" => /\d+/
+        }
+        
+        rules.each do |message, regex|
+            # debugger
+            errors[:password] << message unless @password.match(regex)
+        end
+    end
+
+    has_one_attached :photo
     
     def self.find_by_credentials(email, password)
         user = User.find_by(email: email)

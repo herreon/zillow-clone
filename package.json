@@ -11,10 +11,14 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.5",
-    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "redux-logger": "^3.0.6",
+    "file-loader": "^5.1.0",
+    "url-loader": "^3.0.0"
   },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "version": "1.0.0",
@@ -42,9 +46,5 @@
   "bugs": {
     "url": "https://github.com/herreon/yillow/issues"
   },
-  "homepage": "https://github.com/herreon/yillow#readme",
-  "devDependencies": {
-    "file-loader": "^5.1.0",
-    "url-loader": "^3.0.0"
-  }
+  "homepage": "https://github.com/herreon/yillow#readme"
 }
