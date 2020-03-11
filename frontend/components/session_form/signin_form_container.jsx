@@ -16,6 +16,7 @@ const mapStateToProps = ({ errors }) => {
 const mapDispatchToProps = dispatch => {
     return {
         processForm: (user) => dispatch(login(user)),
+        processDemo: (user) => dispatch(login(user)),
         closeModal: () => dispatch(closeModal()),
         openModal: modal => dispatch(openModal(modal)),
         clearErrors: () => dispatch(removeErrors())

@@ -1,7 +1,10 @@
 class User < ApplicationRecord
+
     after_initialize :ensure_session_token
 
     attr_reader :password
+
+    has_one_attached :photo
     
     validates :email, :password_digest, :session_token, presence: true
     validates :email, uniqueness: true
@@ -25,7 +28,6 @@ class User < ApplicationRecord
         end
     end
 
-    has_one_attached :photo
     
     def self.find_by_credentials(email, password)
         user = User.find_by(email: email)

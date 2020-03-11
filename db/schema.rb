@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_09_172636) do
+ActiveRecord::Schema.define(version: 2020_03_11_000410) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,33 @@ ActiveRecord::Schema.define(version: 2020_03_09_172636) do
     t.string "checksum", null: false
     t.datetime "created_at", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "properties", force: :cascade do |t|
+    t.float "latitude", null: false
+    t.float "longitude", null: false
+    t.string "address"
+    t.string "city_or_town"
+    t.string "county"
+    t.string "postal_code"
+    t.integer "area_in_sqft"
+    t.integer "lot_in_sqft"
+    t.string "status", null: false
+    t.integer "no_bathrooms", null: false
+    t.integer "no_bedrooms", null: false
+    t.string "summary"
+    t.integer "price"
+    t.string "year_built"
+    t.string "year_major_remodel"
+    t.integer "hoa_monthly_fee"
+    t.string "heating"
+    t.string "cooling"
+    t.string "parking_details"
+    t.string "housing_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_properties_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

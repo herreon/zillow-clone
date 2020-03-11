@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
     let store;
+
     if (window.currentUser) {
         const preloadedState = {
             entities: {
@@ -33,5 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // window.logout = SessionApiUtil.logout;
 
     // const store = configureStore();
+
     
 });
