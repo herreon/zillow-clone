@@ -23,7 +23,6 @@ class User < ApplicationRecord
         }
         
         rules.each do |message, regex|
-            # debugger
             errors[:password] << message unless @password.match(regex)
         end
     end

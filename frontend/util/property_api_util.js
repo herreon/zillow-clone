@@ -1,16 +1,17 @@
-export const fetchProperties = () => (
+export const fetchProperties = filters => (
     $.ajax({
         method: 'GET',
-        url: 'api/properties'
+        url: 'api/properties',
+        filters
     })
-)
+);
 
 export const fetchProperty = id => (
     $.ajax({
         method: 'GET',
         url: `api/properties/${id}`
     })
-)
+);
 
 export const createProperty = propertyForm => (
     $.ajax({
@@ -18,4 +19,4 @@ export const createProperty = propertyForm => (
         url: 'api/properties',
         data: propertyForm
     })
-)
+);

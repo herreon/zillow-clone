@@ -39,6 +39,7 @@ p1 = Property.create!(
     address: "170 Hawthorne St #2912",
     city_or_town: "San Francisco",
     county: "San Francisco",
+    state: "CA",
     postal_code: "94107",
     area_in_sqft: "1044",
     lot_in_sqft: "1044",
@@ -57,11 +58,34 @@ p1 = Property.create!(
 )
 
 p2 = Property.create!(
+    latitude: 37.785278,
+    longitude: -122.435813,
+    address: "2000 Post St",
+    city_or_town: "San Francisco",
+    county: "San Francisco",
+    state: "CA",
+    postal_code: "94115",
+    area_in_sqft: "475",
+    lot_in_sqft: "475",
+    status: "For Rent",
+    no_bathrooms: 1,
+    no_bedrooms: 1,
+    summary: "2000 Post features stylish studio, one, and two bedroom apartments with sophisticated amenities in desirable Lower Pacific Heights. 2000 Post boasts remarkable amenities and luxury apartments in San Francisco's Pacific Heights neighborhood. Take advantage of newly remodeled apartment homes which feature granite countertops, stainless steel and black appliances, and updated cabinetry. Enjoy nine foot ceilings, walk-in closets, expansive bay windows, and thoughtful finishes. Now offering furnished and unfurnished apartments, this San Francisco apartment community features world-class amenities including a lush garden, swimming pool, sauna, and fitness center. Located in the lower Pacific Heights neighborhood, 2000 Post apartments provide close proximity to bus transit and the 101 and 80 Freeways. Our Pacific Heights apartments are close to several prestigious schools as well as a myriad of shops and restaurants on Fillmore Street and nearby Japan Town. Visit 2000 Post today for a personalized tour and experience the best blend of luxury and convenience in desirable San Francisco.",
+    price: 3206,
+    hoa_monthly_fee: 0,
+    heating: "None",
+    cooling: "None",
+    housing_type: "Studio",
+    user_id: u1.id
+)
+
+p3 = Property.create!(
     latitude: 37.789124,
     longitude: -122.484881,
     address: "10 Sea Cliff Ave",
     city_or_town: "San Francisco",
     county: "San Francisco",
+    state: "CA",
     postal_code: "94121",
     area_in_sqft: "3420",
     lot_in_sqft: "3484",
@@ -76,12 +100,13 @@ p2 = Property.create!(
     user_id: u2.id
 )
 
-p3 = Property.create!(
+p4 = Property.create!(
     latitude: 37.761678,
     longitude: -122.44484,
     address: "4475 17th St",
     city_or_town: "San Francisco",
     county: "San Francisco",
+    state: "CA",
     postal_code: "94114",
     area_in_sqft: "1360",
     lot_in_sqft: "2613",
@@ -120,3 +145,11 @@ p3 = Property.create!(
 #     :housing_type:
 # )
 
+p1.photo.attach(io: File.open("/Users/hollyjeong/Desktop/img/1/1.webp"), filename: "1.webp")
+p2.photo.attach(io: File.open("/Users/hollyjeong/Desktop/img/2/1.jpg"), filename: "1.jpg")
+p3.photo.attach(io: File.open("/Users/hollyjeong/Desktop/img/3/1.webp"), filename: "1.webp")
+p4.photo.attach(io: File.open("/Users/hollyjeong/Desktop/img/4/1.webp"), filename: "1.webp")
+
+# p1.photos.attach(io: File.open("/Users/hollyjeong/Desktop/img/1/1.webp"), filename: "1.webp")
+# p1.photos.attach(io: File.open("/Users/hollyjeong/Desktop/img/1/2.webp"), filename: "2.webp")
+# p1.photos.attach(io: File.open("/Users/hollyjeong/Desktop/img/1/3.webp"), filename: "3.webp")

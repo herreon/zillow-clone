@@ -4,9 +4,10 @@ import configureStore from './store/store';
 import Root from "./components/root";
 
 import * as SessionApiUtil from './util/session_api_util';
+import * as PropertyApiUtil from './util/property_api_util';
+import { fetchProperties, fetchProperty } from './actions/property_actions';
 
 document.addEventListener("DOMContentLoaded", () => {
-    
 
     let store;
 
@@ -26,8 +27,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const root = document.getElementById("root");
     ReactDOM.render(<Root store={store} />, root);
 
+    
     window.getState = store.getState;
     window.dispatch = store.dispatch;
+
+    window.fetchProperties = fetchProperties;
+    window.fetchProperty = fetchProperty;
+    
+    // window.fetchProperties = PropertyApiUtil.fetchProperties;
+    // window.fetchProperty = PropertyApiUtil.fetchProperty;
+    // window.createProperty = PropertyApiUtil.createProperty;
 
     // window.signup = SessionApiUtil.signup;
     // window.login = SessionApiUtil.login;

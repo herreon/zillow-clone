@@ -2,16 +2,17 @@ class Api::PropertiesController < ApplicationController
 
     def index
         @properties = Property.all
+        # @properties = bounds ? Property.in_bounds(bounds) : Property.all
         render :index
-    end
-
-    def create
-        @property = Property.create!(property_params)
-        render :show
     end
 
     def show
         @property = Property.find(params[:id])
+        render :show
+    end
+
+    def create
+        @property = Property.create!(property_params)
         render :show
     end
 
@@ -38,7 +39,14 @@ class Api::PropertiesController < ApplicationController
             :heating,
             :cooling,
             :parking_details,
-            :housing_type
+            :housing_type,
+            :user_id,
+            photos: []
         )
     end
+
+    def bounds
+        params[:bounds]
+    end
+
 end
