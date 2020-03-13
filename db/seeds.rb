@@ -145,11 +145,9 @@ p4 = Property.create!(
 #     :housing_type:
 # )
 
-p1.photo.attach(io: File.open("/Users/hollyjeong/Desktop/img/1/1.webp"), filename: "1.webp")
-p2.photo.attach(io: File.open("/Users/hollyjeong/Desktop/img/2/1.jpg"), filename: "1.jpg")
-p3.photo.attach(io: File.open("/Users/hollyjeong/Desktop/img/3/1.webp"), filename: "1.webp")
-p4.photo.attach(io: File.open("/Users/hollyjeong/Desktop/img/4/1.webp"), filename: "1.webp")
+p1.photo.attach(io: open("https://active-storage-yillow-dev.s3-us-west-1.amazonaws.com/1.webp"), filename: "1-1.webp")
+p2.photo.attach(io: open("https://active-storage-yillow-dev.s3-us-west-1.amazonaws.com/2.jpg"), filename: "2-1.webp")
+p3.photo.attach(io: open("https://active-storage-yillow-dev.s3-us-west-1.amazonaws.com/4-1.webp"), filename: "3-1.webp")
+p4.photo.attach(io: open("https://active-storage-yillow-dev.s3-us-west-1.amazonaws.com/2.webp"), filename: "4-1.webp")
 
-# p1.photos.attach(io: File.open("/Users/hollyjeong/Desktop/img/1/1.webp"), filename: "1.webp")
-# p1.photos.attach(io: File.open("/Users/hollyjeong/Desktop/img/1/2.webp"), filename: "2.webp")
-# p1.photos.attach(io: File.open("/Users/hollyjeong/Desktop/img/1/3.webp"), filename: "3.webp")
+
