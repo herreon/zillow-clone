@@ -1,5 +1,5 @@
 {
-  "name": "yillow",
+  "name": "zillowne",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.10.4",
@@ -38,13 +38,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/herreon/yillow.git"
+    "url": "git+ssh://git@github.com/herreon/zillowne.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/herreon/yillow/issues"
+    "url": "https://github.com/herreon/zillowne/issues"
   },
-  "homepage": "https://github.com/herreon/yillow#readme"
+  "homepage": "https://github.com/herreon/zillowne#readme"
 }
