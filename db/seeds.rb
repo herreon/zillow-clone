@@ -122,6 +122,47 @@ p4 = Property.create!(
     user_id: u3.id
 )
 
+p5 = Property.create!(
+    latitude: 37.754236,
+    longitude: -122.428005,
+    address: "1050 Church St",
+    city_or_town: "San Francisco",
+    county: "San Francisco",
+    state: "CA",
+    postal_code: "94114",
+    area_in_sqft: "1700",
+    lot_in_sqft: "4112",
+    status: "For Sale",
+    no_bathrooms: 2,
+    no_bedrooms: 4,
+    summary: "This location is hard to beat! Situated in the highly coveted Noe Valley, just blocks to the quaint 24th St & Dolores Park. The neighborhood is beaming w/ an extensive array of restaurants, cafes, book stores, & farmer's market. 95 Walk Score & multiple transit options including Muni & Bart. The interior presents traditional charm & stunning views. The home is tucked away from the street w/ a security gate providing additional privacy. Main living space - spacious living room w/ crown molding & fireplace, and a formal dining room accessing the large kitchen. Kitchen is equipped w/ gas range & door to the private backyard. Each level features 2bd/1ba. One of the upper level bedrooms features access to backyard. RARE detached 3-car garage w/ access through private street. Amenities include hardwood floors, inside laundry & central forced heat. This property presents multiple options - purchasing as an investment property, renovation to flip, or blank canvas to build your dream home!",
+    price: 1998000,
+    year_built: "1950",
+    parking_details: "Detached Garage",
+    housing_type: "Single Family",
+    user_id: u3.id
+)
+
+p6 = Property.create!(
+    latitude: 37.775167, 
+    longitude: -122.424491,
+    address: "325 Octavia St",
+    city_or_town: "San Francisco",
+    county: "San Francisco",
+    state: "CA",
+    postal_code: "94102",
+    area_in_sqft: "646",
+    lot_in_sqft: "646",
+    status: "For Rent",
+    no_bathrooms: 1,
+    no_bedrooms: 1,
+    summary: "This location is hard to beat! Situated in the highly coveted Noe Valley, just blocks to the quaint 24th St & Dolores Park. The neighborhood is beaming w/ an extensive array of restaurants, cafes, book stores, & farmer's market. 95 Walk Score & multiple transit options including Muni & Bart. The interior presents traditional charm & stunning views. The home is tucked away from the street w/ a security gate providing additional privacy. Main living space - spacious living room w/ crown molding & fireplace, and a formal dining room accessing the large kitchen. Kitchen is equipped w/ gas range & door to the private backyard. Each level features 2bd/1ba. One of the upper level bedrooms features access to backyard. RARE detached 3-car garage w/ access through private street. Amenities include hardwood floors, inside laundry & central forced heat. This property presents multiple options - purchasing as an investment property, renovation to flip, or blank canvas to build your dream home!",
+    price: 3290,
+    parking_details: "None",
+    housing_type: "Apartment",
+    user_id: u1.id
+)
+
 # template = Property.create!(
 #     :latitude:,
 #     :longitude:,

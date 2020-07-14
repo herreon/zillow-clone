@@ -11,12 +11,12 @@ const Search = ({ properties, fetchProperties, updateBounds }) =>  (
         <div className="user-pane">
 
 
-            <div className="left-half">
+            {/* <div className="left-half">
                 <PropertyMap
                     properties={properties}
                     updateBounds={updateBounds}
                 />
-            </div>
+            </div> */}
 
             <div className="right-half">
                 <PropertyIndex properties={properties} fetchProperties={fetchProperties} />
