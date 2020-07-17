@@ -1,6 +1,6 @@
 # README
 
-[Yillow](https://yillow.herokuapp.com/#/) was inspired by [Zillow](https://www.zillow.com/), a real estate and rental marketplace, where users can discover homes for sale and for rent.
+[Zillowne](https://yillow.herokuapp.com/#/) was inspired by [Zillow](https://www.zillow.com/), a real estate and rental marketplace, where users can discover homes for sale and for rent.
 
 ![](https://user-images.githubusercontent.com/58346289/76649633-581de580-651e-11ea-9c1f-0e6f6a1cfaa2.png)
 
