@@ -1,11 +1,12 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-    entry: "./frontend/zillowne.jsx",
+    entry: "./frontend/zillo.jsx",
     output: {
         path: path.resolve(__dirname, "app", "assets", "javascripts"),
         filename: "./bundle.js"
     },
+    
     module: {
         rules: [
             {
@@ -26,6 +27,8 @@ module.exports = {
             }],
 
     },
+
+    devtool: 'source-map',
     resolve: {
         extensions: [".js", ".jsx", "*"]
     }
